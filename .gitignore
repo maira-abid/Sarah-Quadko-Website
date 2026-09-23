@@ -1,0 +1,6 @@
+# Brand reference documents (not site assets)
+*.pdf
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db

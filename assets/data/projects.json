@@ -1,0 +1,338 @@
+{
+  "categories": [
+    {
+      "key": "residential",
+      "label": "Residential"
+    },
+    {
+      "key": "commercial",
+      "label": "Commercial"
+    },
+    {
+      "key": "restaurant",
+      "label": "Restaurant"
+    },
+    {
+      "key": "retail",
+      "label": "Retail"
+    }
+  ],
+  "projects": [
+    {
+      "slug": "private-residence-full-house-renovation",
+      "title": "Private Residence: Full House Renovation",
+      "category": "residential",
+      "location": "Pakistan",
+      "year": "2025",
+      "description": "A ground-up interior renovation covering entrance, kitchen, living room, bedrooms, bathroom and outdoor space as one continuous scheme: warm timber, curved plaster coves and a restrained material palette carried through every room.",
+      "images": [
+        "assets/img/projects/residential/private-residence-full-house-renovation/private-residence-full-house-renovation-1.webp",
+        "assets/img/projects/residential/private-residence-full-house-renovation/private-residence-full-house-renovation-4.webp",
+        "assets/img/projects/residential/private-residence-full-house-renovation/private-residence-full-house-renovation-9.webp",
+        "assets/img/projects/residential/private-residence-full-house-renovation/private-residence-full-house-renovation-2.webp",
+        "assets/img/projects/residential/private-residence-full-house-renovation/private-residence-full-house-renovation-5.webp",
+        "assets/img/projects/residential/private-residence-full-house-renovation/private-residence-full-house-renovation-6.webp",
+        "assets/img/projects/residential/private-residence-full-house-renovation/private-residence-full-house-renovation-7.webp",
+        "assets/img/projects/residential/private-residence-full-house-renovation/private-residence-full-house-renovation-8.webp",
+        "assets/img/projects/residential/private-residence-full-house-renovation/private-residence-full-house-renovation-10.webp",
+        "assets/img/projects/residential/private-residence-full-house-renovation/private-residence-full-house-renovation-3.webp"
+      ]
+    },
+    {
+      "slug": "private-residence-interior-design",
+      "title": "Private Residence: Interior Design",
+      "category": "residential",
+      "location": "Pakistan",
+      "year": "2025",
+      "description": "A full interior scheme spanning veranda, drawing room, kitchen, bedroom, TV lounge and powder room, developed as a single presentation set from outdoor seating through to the smallest fittings.",
+      "images": [
+        "assets/img/projects/residential/private-residence-interior-design/private-residence-interior-design-1.webp",
+        "assets/img/projects/residential/private-residence-interior-design/private-residence-interior-design-5.webp",
+        "assets/img/projects/residential/private-residence-interior-design/private-residence-interior-design-3.webp",
+        "assets/img/projects/residential/private-residence-interior-design/private-residence-interior-design-6.webp",
+        "assets/img/projects/residential/private-residence-interior-design/private-residence-interior-design-4.webp",
+        "assets/img/projects/residential/private-residence-interior-design/private-residence-interior-design-2.webp"
+      ]
+    },
+    {
+      "slug": "private-residence-before-after",
+      "title": "Private Residence: Before & After Renovation",
+      "category": "residential",
+      "location": "Pakistan",
+      "year": "2024",
+      "description": "A full renovation for a private residence, shown as it was and as it is now: the clearest record of what changed, room by room.",
+      "images": [
+        "assets/img/projects/residential/private-residence-before-after/after/after-3.webp"
+      ],
+      "beforeImages": [
+        "assets/img/projects/residential/private-residence-before-after/before/before-1.webp",
+        "assets/img/projects/residential/private-residence-before-after/before/before-2.webp"
+      ],
+      "afterImages": [
+        "assets/img/projects/residential/private-residence-before-after/after/after-3.webp",
+        "assets/img/projects/residential/private-residence-before-after/after/after-2.webp",
+        "assets/img/projects/residential/private-residence-before-after/after/after-4.webp",
+        "assets/img/projects/residential/private-residence-before-after/after/after-5.webp"
+      ]
+    },
+    {
+      "slug": "private-residence-living-spaces",
+      "title": "Private Residence: Living Spaces",
+      "category": "residential",
+      "location": "Pakistan",
+      "year": "2024",
+      "description": "Interiors for a private residence, furnished and finished for daily family life rather than a single styled moment.",
+      "images": [
+        "assets/img/projects/residential/private-residence-living-spaces/private-residence-living-spaces-2.webp",
+        "assets/img/projects/residential/private-residence-living-spaces/private-residence-living-spaces-1.webp",
+        "assets/img/projects/residential/private-residence-living-spaces/private-residence-living-spaces-9.webp",
+        "assets/img/projects/residential/private-residence-living-spaces/private-residence-living-spaces-3.webp",
+        "assets/img/projects/residential/private-residence-living-spaces/private-residence-living-spaces-4.webp",
+        "assets/img/projects/residential/private-residence-living-spaces/private-residence-living-spaces-5.webp",
+        "assets/img/projects/residential/private-residence-living-spaces/private-residence-living-spaces-6.webp",
+        "assets/img/projects/residential/private-residence-living-spaces/private-residence-living-spaces-7.webp",
+        "assets/img/projects/residential/private-residence-living-spaces/private-residence-living-spaces-8.webp",
+        "assets/img/projects/residential/private-residence-living-spaces/private-residence-living-spaces-10.webp"
+      ]
+    },
+    {
+      "slug": "f6-residence-kitchen-renovation",
+      "title": "F-6 Residence: Kitchen Renovation",
+      "category": "residential",
+      "location": "F-6, Islamabad, Pakistan",
+      "year": "2025",
+      "description": "A fuller kitchen renovation within a private F-6 residence, documented as the build came together: sage cabinetry, a dark stone island and a dining table built for a full family gathering.",
+      "images": [
+        "assets/img/projects/residential/f6-residence-kitchen-renovation/f6-residence-kitchen-renovation-10.webp",
+        "assets/img/projects/residential/f6-residence-kitchen-renovation/f6-residence-kitchen-renovation-1.webp",
+        "assets/img/projects/residential/f6-residence-kitchen-renovation/f6-residence-kitchen-renovation-6.webp",
+        "assets/img/projects/residential/f6-residence-kitchen-renovation/f6-residence-kitchen-renovation-7.webp",
+        "assets/img/projects/residential/f6-residence-kitchen-renovation/f6-residence-kitchen-renovation-4.webp",
+        "assets/img/projects/residential/f6-residence-kitchen-renovation/f6-residence-kitchen-renovation-8.webp"
+      ]
+    },
+    {
+      "slug": "rooftop-terrace",
+      "title": "Rooftop Terrace",
+      "category": "residential",
+      "location": "Pakistan",
+      "year": "2025",
+      "description": "A rooftop lounge built around a fire pit and a long view, planted heavily enough on all sides to feel private above a working city.",
+      "images": [
+        "assets/img/projects/residential/rooftop-terrace/rooftop-terrace-1.webp",
+        "assets/img/projects/residential/rooftop-terrace/rooftop-terrace-2.webp"
+      ]
+    },
+    {
+      "slug": "living-room",
+      "title": "Living Room",
+      "category": "residential",
+      "location": "Pakistan",
+      "year": "2025",
+      "description": "A living room reworked around a single considered material palette, kept deliberately restrained so the furniture carries the room.",
+      "images": [
+        "assets/img/projects/residential/living-room/living-room-1.webp",
+        "assets/img/projects/residential/living-room/living-room-2.webp"
+      ]
+    },
+    {
+      "slug": "f6-residence-exterior",
+      "title": "F-6 Residence: Exterior",
+      "category": "residential",
+      "location": "F-6, Islamabad, Pakistan",
+      "year": "2024",
+      "description": "Facade and entrance work for a private F-6 residence, reworked to read as one composed elevation rather than a series of additions.",
+      "images": [
+        "assets/img/projects/residential/f6-residence-exterior/f6-residence-exterior-1.webp",
+        "assets/img/projects/residential/f6-residence-exterior/f6-residence-exterior-2.webp",
+        "assets/img/projects/residential/f6-residence-exterior/f6-residence-exterior-3.webp",
+        "assets/img/projects/residential/f6-residence-exterior/f6-residence-exterior-4.webp",
+        "assets/img/projects/residential/f6-residence-exterior/f6-residence-exterior-5.webp",
+        "assets/img/projects/residential/f6-residence-exterior/f6-residence-exterior-6.webp"
+      ]
+    },
+    {
+      "slug": "f6-residence-lounge",
+      "title": "F-6 Residence: Lounge",
+      "category": "residential",
+      "location": "F-6, Islamabad, Pakistan",
+      "year": "2024",
+      "description": "A quiet lounge within a private F-6 residence, furnished for everyday use rather than a single occasion.",
+      "images": [
+        "assets/img/projects/residential/f6-residence-lounge/f6-residence-lounge-1.webp",
+        "assets/img/projects/residential/f6-residence-lounge/f6-residence-lounge-2.webp",
+        "assets/img/projects/residential/f6-residence-lounge/f6-residence-lounge-3.webp"
+      ]
+    },
+    {
+      "slug": "f6-residence-kitchen",
+      "title": "F-6 Residence: Kitchen",
+      "category": "residential",
+      "location": "F-6, Islamabad, Pakistan",
+      "year": "2024",
+      "description": "A compact kitchen renovation for one family's unit within a shared F-6 residence: warm cabinetry and considered storage in a small footprint.",
+      "images": [
+        "assets/img/projects/residential/f6-residence-kitchen/f6-residence-kitchen-1.webp",
+        "assets/img/projects/residential/f6-residence-kitchen/f6-residence-kitchen-2.webp"
+      ]
+    },
+    {
+      "slug": "private-residence-outdoor-concept",
+      "title": "Private Residence: Outdoor Concept",
+      "category": "residential",
+      "location": "Pakistan",
+      "year": "",
+      "description": "Early concept direction for an outdoor renovation, currently in development.",
+      "images": [],
+      "isConcept": true,
+      "conceptNote": "This project is at concept stage. Photography and final scheme to follow."
+    },
+    {
+      "slug": "private-residence-renovation-concept",
+      "title": "Private Residence: Renovation Concept",
+      "category": "residential",
+      "location": "Pakistan",
+      "year": "",
+      "description": "Early concept direction for a residential renovation, currently in development.",
+      "images": [],
+      "isConcept": true,
+      "conceptNote": "This project is at concept stage. Photography and final scheme to follow."
+    },
+    {
+      "slug": "private-residence-concept-design",
+      "title": "Private Residence: Concept Design",
+      "category": "residential",
+      "location": "Pakistan",
+      "year": "",
+      "description": "Early concept direction for a private residence, currently in development.",
+      "images": [],
+      "isConcept": true,
+      "conceptNote": "This project is at concept stage. Photography and final scheme to follow."
+    },
+    {
+      "slug": "raha-studio-office",
+      "title": "Raha Studio: Office Interior",
+      "category": "commercial",
+      "location": "Pakistan",
+      "year": "2025",
+      "description": "An industrial-toned studio office for a fashion brand, built around exposed concrete, dark steel and a single considered display wall.",
+      "images": [
+        "assets/img/projects/commercial/raha-studio-office/raha-studio-office-1.webp",
+        "assets/img/projects/commercial/raha-studio-office/raha-studio-office-2.webp"
+      ]
+    },
+    {
+      "slug": "numl-bti-building",
+      "title": "NUML: BT&I Building",
+      "category": "commercial",
+      "location": "Islamabad, Pakistan",
+      "year": "2025",
+      "description": "Interior and facade direction for a university building at NUML, developed across a full set of presentation renders.",
+      "images": [
+        "assets/img/projects/commercial/numl-bti-building/numl-bti-building-3.webp",
+        "assets/img/projects/commercial/numl-bti-building/numl-bti-building-6.webp",
+        "assets/img/projects/commercial/numl-bti-building/numl-bti-building-7.webp",
+        "assets/img/projects/commercial/numl-bti-building/numl-bti-building-4.webp",
+        "assets/img/projects/commercial/numl-bti-building/numl-bti-building-5.webp",
+        "assets/img/projects/commercial/numl-bti-building/numl-bti-building-1.webp",
+        "assets/img/projects/commercial/numl-bti-building/numl-bti-building-2.webp",
+        "assets/img/projects/commercial/numl-bti-building/numl-bti-building-8.webp"
+      ]
+    },
+    {
+      "slug": "bjj-training-facility",
+      "title": "Islamabad Brazilian Jiu-Jitsu: Training Facility",
+      "category": "commercial",
+      "location": "Islamabad, Pakistan",
+      "year": "2024",
+      "description": "A martial arts and self-defence training facility, fitted out in dark steel and etched glass and documented on site after completion.",
+      "images": [
+        "assets/img/projects/commercial/bjj-training-facility/bjj-training-facility-1.webp",
+        "assets/img/projects/commercial/bjj-training-facility/bjj-training-facility-4.webp",
+        "assets/img/projects/commercial/bjj-training-facility/bjj-training-facility-9.webp",
+        "assets/img/projects/commercial/bjj-training-facility/bjj-training-facility-2.webp",
+        "assets/img/projects/commercial/bjj-training-facility/bjj-training-facility-3.webp",
+        "assets/img/projects/commercial/bjj-training-facility/bjj-training-facility-5.webp",
+        "assets/img/projects/commercial/bjj-training-facility/bjj-training-facility-6.webp",
+        "assets/img/projects/commercial/bjj-training-facility/bjj-training-facility-7.webp",
+        "assets/img/projects/commercial/bjj-training-facility/bjj-training-facility-8.webp",
+        "assets/img/projects/commercial/bjj-training-facility/bjj-training-facility-10.webp",
+        "assets/img/projects/commercial/bjj-training-facility/bjj-training-facility-11.webp",
+        "assets/img/projects/commercial/bjj-training-facility/bjj-training-facility-12.webp"
+      ]
+    },
+    {
+      "slug": "holiday-country-club",
+      "title": "Holiday Country Club",
+      "category": "commercial",
+      "location": "Pakistan",
+      "year": "",
+      "description": "Early concept direction for a country club renovation, currently in development.",
+      "images": [],
+      "isConcept": true,
+      "conceptNote": "This project is at concept stage. Photography and final scheme to follow."
+    },
+    {
+      "slug": "smashed-it-dha",
+      "title": "Smashed It: DHA",
+      "category": "restaurant",
+      "location": "DHA, Pakistan",
+      "year": "2025",
+      "description": "A moody, industrial cafe fit-out in dark brick and blackened steel, with exposed filament pendants and a chalkboard menu wall.",
+      "images": [
+        "assets/img/projects/restaurant/smashed-it-dha/smashed-it-dha-1.webp",
+        "assets/img/projects/restaurant/smashed-it-dha/smashed-it-dha-2.webp",
+        "assets/img/projects/restaurant/smashed-it-dha/smashed-it-dha-3.webp",
+        "assets/img/projects/restaurant/smashed-it-dha/smashed-it-dha-4.webp",
+        "assets/img/projects/restaurant/smashed-it-dha/smashed-it-dha-5.webp",
+        "assets/img/projects/restaurant/smashed-it-dha/smashed-it-dha-6.webp"
+      ]
+    },
+    {
+      "slug": "smashed-it-f7",
+      "title": "Smashed It: F-7",
+      "category": "restaurant",
+      "location": "F-7, Pakistan",
+      "year": "2025",
+      "description": "A completed F-7 branch built around reclaimed timber, a sculptural red steel lattice, exposed lighting and a playful graphic wall.",
+      "images": [
+        "assets/img/projects/restaurant/smashed-it-f7/smashed-it-f7-1.webp",
+        "assets/img/projects/restaurant/smashed-it-f7/smashed-it-f7-2.webp",
+        "assets/img/projects/restaurant/smashed-it-f7/smashed-it-f7-3.webp",
+        "assets/img/projects/restaurant/smashed-it-f7/smashed-it-f7-4.webp"
+      ]
+    },
+    {
+      "slug": "fusion-wok",
+      "title": "Fusion Wok",
+      "category": "restaurant",
+      "location": "Pakistan",
+      "year": "2025",
+      "description": "An East-Asian fusion restaurant built around cherry-blossom motifs, carved timber screens and warm pendant lighting.",
+      "images": [
+        "assets/img/projects/restaurant/fusion-wok/fusion-wok-1.webp",
+        "assets/img/projects/restaurant/fusion-wok/fusion-wok-2.webp",
+        "assets/img/projects/restaurant/fusion-wok/fusion-wok-3.webp",
+        "assets/img/projects/restaurant/fusion-wok/fusion-wok-4.webp",
+        "assets/img/projects/restaurant/fusion-wok/fusion-wok-5.webp",
+        "assets/img/projects/restaurant/fusion-wok/fusion-wok-6.webp",
+        "assets/img/projects/restaurant/fusion-wok/fusion-wok-7.webp",
+        "assets/img/projects/restaurant/fusion-wok/fusion-wok-8.webp"
+      ]
+    },
+    {
+      "slug": "ows-retail-store",
+      "title": "OWS: Old World of Style",
+      "category": "retail",
+      "location": "Pakistan",
+      "year": "2024",
+      "description": "A retail storefront for Old World of Style, designed to read clean and confident against a busy mall corridor.",
+      "images": [
+        "assets/img/projects/retail/ows-retail-store/ows-retail-store-1.webp",
+        "assets/img/projects/retail/ows-retail-store/ows-retail-store-2.webp",
+        "assets/img/projects/retail/ows-retail-store/ows-retail-store-3.webp",
+        "assets/img/projects/retail/ows-retail-store/ows-retail-store-4.webp"
+      ]
+    }
+  ]
+}

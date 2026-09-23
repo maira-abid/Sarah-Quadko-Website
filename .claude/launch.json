@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "quadko-static",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "C:/Users/spark/AppData/Local/Temp/claude/C--Users-spark-Downloads-Quadko-Website/25a7f60e-259e-45e9-bcfc-eddb749098f6/scratchpad/static-server.js",
+        "C:/Users/spark/Downloads/Quadko_Website",
+        "5173"
+      ],
+      "port": 5173
+    }
+  ]
+}
