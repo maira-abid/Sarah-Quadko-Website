@@ -512,7 +512,11 @@ h5, .h5{ font-family:var(--font-sans); font-weight:600; font-size:var(--step1); 
   .quad-grid > *{ border-right:none !important; }
   .quad-grid > *:last-child{ border-bottom:none; }
 }
-.quad-cell{ padding: clamp(28px,4vw,56px); position:relative; }
+.quad-cell{ position:relative; display:flex; flex-direction:column; }
+.quad-media{ aspect-ratio:21/9; overflow:hidden; background:var(--qk-black); }
+.quad-media img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform var(--dur-l) var(--ease); }
+.quad-cell:hover .quad-media img{ transform:scale(1.04); }
+.quad-body{ padding: clamp(18px,2.2vw,28px); }
 .quad-cell .num{ font-family:var(--font-serif); font-style:italic; color:var(--qk-coral); font-size:var(--step1); display:block; margin-bottom:1em; }
 
 /* ==========================================================================
