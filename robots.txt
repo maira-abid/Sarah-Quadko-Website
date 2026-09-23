@@ -1,40 +1,52 @@
-# Quadko: robots.txt
-# Standard web crawlers
+# ============================================================
+# TEMP: GitHub Pages preview lockdown.
+# This blocks ALL crawlers while the site is only up for client
+# review. Restore the block below (and remove this one) before
+# pointing the real quadko.com domain at this site.
+# ============================================================
 User-agent: *
-Allow: /
+Disallow: /
 
-# Search-engine AI overviews / assistants
-User-agent: Google-Extended
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-User
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-Sitemap: https://quadko.com/sitemap.xml
+# ------------------------------------------------------------
+# Real robots.txt for quadko.com — restore this at launch:
+#
+# # Quadko: robots.txt
+# # Standard web crawlers
+# User-agent: *
+# Allow: /
+#
+# # Search-engine AI overviews / assistants
+# User-agent: Google-Extended
+# Allow: /
+#
+# User-agent: OAI-SearchBot
+# Allow: /
+#
+# User-agent: ChatGPT-User
+# Allow: /
+#
+# User-agent: GPTBot
+# Allow: /
+#
+# User-agent: PerplexityBot
+# Allow: /
+#
+# User-agent: ClaudeBot
+# Allow: /
+#
+# User-agent: Claude-User
+# Allow: /
+#
+# User-agent: anthropic-ai
+# Allow: /
+#
+# User-agent: Applebot-Extended
+# Allow: /
+#
+# User-agent: CCBot
+# Allow: /
+#
+# User-agent: Bytespider
+# Allow: /
+#
+# Sitemap: https://quadko.com/sitemap.xml
