@@ -199,6 +199,7 @@
     }
     var i = 0;
     var full = true;
+    var noteInserted = false;
     while (i < rest.length) {
       if (full || rest.length - i === 1) {
         var wrap = document.createElement("div");
@@ -230,6 +231,20 @@
         i += 2;
       }
       full = !full;
+
+      // DEMO ONLY: an editorial text break partway through the gallery, in the
+      // Kelly-Wearstler-style centered-italic-caption vein. Placeholder copy —
+      // confirm with the user whether to keep this pattern (with real project
+      // notes) or drop it before this goes further.
+      if (!noteInserted && i >= Math.ceil(rest.length / 2)) {
+        noteInserted = true;
+        var note = document.createElement("div");
+        note.className = "project-editorial-note reveal is-visible";
+        var noteP = document.createElement("p");
+        noteP.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+        note.appendChild(noteP);
+        gallery.appendChild(note);
+      }
     }
 
     // Next project: cycle sequentially through the same category (wrapping
