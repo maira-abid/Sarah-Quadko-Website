@@ -83,6 +83,27 @@
     });
   });
 
+  // ---- Mobile nav: Products subcategories, one open at a time ----
+  document.querySelectorAll(".mobile-nav-submenu").forEach(function (submenu) {
+    var subgroups = submenu.querySelectorAll(".mobile-nav-subgroup");
+    subgroups.forEach(function (subgroup) {
+      var toggle = subgroup.querySelector(".mobile-nav-subgroup-toggle");
+      if (!toggle) return;
+      toggle.addEventListener("click", function () {
+        var wasOpen = subgroup.classList.contains("is-open");
+        subgroups.forEach(function (sg) {
+          sg.classList.remove("is-open");
+          var t = sg.querySelector(".mobile-nav-subgroup-toggle");
+          if (t) t.setAttribute("aria-expanded", "false");
+        });
+        if (!wasOpen) {
+          subgroup.classList.add("is-open");
+          toggle.setAttribute("aria-expanded", "true");
+        }
+      });
+    });
+  });
+
   // ---- Desktop nav: Projects / Products full-width mega-menus (hover to open, like Kelly's) ----
   function closeSearchPanel() {
     var sp = document.querySelector("[data-search-panel]");
