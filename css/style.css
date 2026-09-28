@@ -544,7 +544,7 @@ h5, .h5{ font-family:var(--font-sans); font-weight:600; font-size:var(--step1); 
 .project-hero{ position:relative; width:100%; height:100vh; min-height:560px; max-height:1200px; overflow:hidden; background:var(--qk-black); }
 .project-hero img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
 
-.project-overview{ display:flex; flex-wrap:wrap; align-items:baseline; gap:20px clamp(32px,5vw,72px); padding-bottom:32px; border-bottom:1px solid var(--qk-line); }
+.project-overview{ display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:20px clamp(32px,5vw,72px); padding-bottom:32px; border-bottom:1px solid var(--qk-line); }
 .project-overview-label{ font-size:var(--step1); font-weight:600; flex:0 0 auto; margin:0; }
 .project-meta-grid{ display:flex; flex-wrap:wrap; gap:20px clamp(24px,4vw,56px); margin:0; }
 .project-meta-grid > div{ margin:0; }
@@ -640,6 +640,16 @@ h5, .h5{ font-family:var(--font-sans); font-weight:600; font-size:var(--step1); 
 .product-thumb.is-active, .product-thumb:hover{ border-color: var(--qk-coral); }
 .product-desc p:first-child{ margin-top:0 !important; }
 
+.product-tabs-nav{ display:flex; gap:clamp(20px,3vw,32px); border-bottom:1px solid var(--qk-line); flex-wrap:wrap; }
+.product-tab-btn{
+  background:none; border:none; padding:0 0 12px; cursor:pointer;
+  font-family:var(--font-serif); font-style:italic; font-weight:500;
+  font-size:var(--step0); color:var(--ink-faint); position:relative;
+}
+.product-tab-btn.is-active{ color:var(--ink); }
+.product-tab-btn.is-active::after{ content:''; position:absolute; left:0; right:0; bottom:-1px; height:2px; background:var(--ink); }
+.product-tab-panel{ padding-top:24px; }
+
 .tag{
   display:inline-block; font-size:.66rem; letter-spacing:.12em; text-transform:uppercase;
   padding:.4em .85em; border-radius:999px; border:1px solid var(--qk-line); color:var(--ink-soft);
@@ -696,7 +706,7 @@ h5, .h5{ font-family:var(--font-sans); font-weight:600; font-size:var(--step1); 
    Footer
    ========================================================================== */
 .site-footer{ background: var(--qk-black); color: var(--qk-cream); padding-block: clamp(36px,4.5vw,56px) 18px; }
-.footer-top{ display:grid; grid-template-columns: 1.4fr repeat(4,1fr); gap:clamp(24px,4vw,40px); padding-bottom:56px; }
+.footer-top{ display:grid; grid-template-columns: 1.2fr repeat(4,1fr); gap:clamp(24px,4vw,40px); padding-bottom:56px; }
 .footer-col h6{ font-size:var(--step-1); letter-spacing:.14em; text-transform:uppercase; color:rgba(246,242,241,.55); margin-bottom:1.2em; }
 .footer-col a, .footer-col address, .footer-col p{ font-size:var(--step0); color: rgba(246,242,241,.85); display:block; margin-bottom:.75em; font-style:normal; }
 .footer-col a:hover{ color:var(--qk-coral); }

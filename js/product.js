@@ -12,16 +12,54 @@
     return "https://api.whatsapp.com/send?phone=923400008758&text=" + text;
   }
 
-  function mailLink(title) {
-    var subject = encodeURIComponent("Enquiry: " + title);
-    return "mailto:studio@quadko.com?subject=" + subject;
-  }
-
   function paragraphs(text) {
     return text
       .split(/\n{2,}/)
       .map(function (block) { return block.trim(); })
       .filter(Boolean);
+  }
+
+  // Source descriptions mix two spec formats: a single "Label: value" block
+  // per line, or a bare label paragraph (with or without a trailing colon,
+  // e.g. "Materials:" or "Dimensions (Inches):") followed by one or more
+  // loose value paragraphs until the next label. Split both into a
+  // description list and a normalized spec list.
+  var SPEC_LABEL_START = /^(Dimensions|Materials?|Use|Features|Finish|Drawer Depth|Size|Set Includes)\b\s*:?/i;
+  function startsSpecLabel(block) {
+    return SPEC_LABEL_START.test(block.split("\n")[0].trim());
+  }
+  function isBareLabelLine(firstLine) {
+    var idx = firstLine.indexOf(":");
+    return idx === -1 || firstLine.slice(idx + 1).trim() === "";
+  }
+  function splitDescription(blocks) {
+    var desc = [];
+    var specs = [];
+    var i = 0;
+    while (i < blocks.length) {
+      var block = blocks[i];
+      if (!startsSpecLabel(block)) {
+        desc.push(block);
+        i++;
+        continue;
+      }
+      var firstLine = block.split("\n")[0].trim();
+      var isBareLabel = block.trim() === firstLine && isBareLabelLine(firstLine);
+      if (!isBareLabel) {
+        specs.push(block);
+        i++;
+        continue;
+      }
+      var label = firstLine.replace(/:\s*$/, "");
+      var values = [];
+      i++;
+      while (i < blocks.length && !startsSpecLabel(blocks[i])) {
+        values.push(blocks[i]);
+        i++;
+      }
+      specs.push(label + ": " + values.join(", "));
+    }
+    return { desc: desc, specs: specs };
   }
 
   function buildCard(p, categoryLabel, showPrice) {
@@ -185,14 +223,29 @@
     document.querySelector("[data-product-category]").textContent = label;
     document.querySelector("[data-product-title]").textContent = product.title;
     var priceEl = document.querySelector("[data-product-price]");
-    if (showsPrice(product)) {
-      priceEl.textContent = fmtPrice(product);
-    } else {
-      priceEl.hidden = true;
-    }
+    priceEl.textContent = showsPrice(product) ? fmtPrice(product) : "Price upon request";
 
     var descRoot = document.querySelector("[data-product-description]");
-    paragraphs(product.description).forEach(function (block) {
+    var specRoot = document.querySelector("[data-product-techspec]");
+    var specTabBtn = document.querySelector("[data-product-techspec-tab]");
+    var blocks = paragraphs(product.description);
+    // Drop a leading paragraph that's just an echo of the product name, exact
+    // (e.g. "Luna Console") or the base name before a "-"/":" suffix in the
+    // title (e.g. "Zay" for "Zay-Bench").
+    if (blocks.length) {
+      var titleLower = product.title.toLowerCase();
+      var firstLower = blocks[0].toLowerCase();
+      var isTitleEcho = firstLower === titleLower ||
+        (firstLower.length >= 3 && titleLower.indexOf(firstLower) === 0 && /^[a-z0-9 ]+$/.test(firstLower));
+      if (isTitleEcho) {
+        blocks = blocks.slice(1);
+      }
+    }
+    var split = splitDescription(blocks);
+    var descBlocks = split.desc;
+    var specBlocks = split.specs;
+
+    descBlocks.forEach(function (block) {
       var p = document.createElement("p");
       p.className = "muted";
       p.style.marginTop = "14px";
@@ -200,12 +253,33 @@
       descRoot.appendChild(p);
     });
 
-    var emailBtn = document.querySelector("[data-product-email]");
-    emailBtn.href = mailLink(product.title);
-    var waBtn = document.querySelector("[data-product-whatsapp]");
-    waBtn.href = waLink(product.title);
-    waBtn.target = "_blank";
-    waBtn.rel = "noopener";
+    if (specBlocks.length) {
+      specTabBtn.hidden = false;
+      specBlocks.forEach(function (block) {
+        var p = document.createElement("p");
+        p.className = "muted";
+        p.style.marginTop = "14px";
+        p.style.whiteSpace = "pre-line";
+        p.textContent = block;
+        specRoot.appendChild(p);
+      });
+    }
+
+    var enquireBtn = document.querySelector("[data-product-enquire]");
+    enquireBtn.href = waLink(product.title);
+    enquireBtn.textContent = showsPrice(product) ? "Enquire" : "Get in Touch to Order";
+
+    document.querySelectorAll("[data-tab-btn]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var target = btn.getAttribute("data-tab-btn");
+        document.querySelectorAll("[data-tab-btn]").forEach(function (b) { b.classList.toggle("is-active", b === btn); });
+        document.querySelectorAll("[data-tab-panel]").forEach(function (panel) {
+          var isTarget = panel.getAttribute("data-tab-panel") === target;
+          panel.classList.toggle("is-active", isTarget);
+          panel.hidden = !isTarget;
+        });
+      });
+    });
 
     var related = data.products
       .filter(function (p) { return p.category === product.category && p.handle !== product.handle; })

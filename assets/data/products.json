@@ -438,7 +438,7 @@
       "price": 467000,
       "priceFrom": false,
       "currency": "PKR",
-      "description": "Ready to break free from the monotony of plastic outdoor furniture? Our new rendition of the Smores table is a real showstopper. Featuring sleek black lines that frame the edges, it adds a bold modern touch to any space. Complete with six hand-woven dining chairs with a metal powder-coated base and a BBQ pit nestled in a travertine top, our smores set is the next level of your outdoor dining experience.Size of table (inches): 72x48x30Size of chairs (inches): 20x18x32Material: Travertine, metal, hand woven jute",
+      "description": "Ready to break free from the monotony of plastic outdoor furniture? Our new rendition of the Smores table is a real showstopper. Featuring sleek black lines that frame the edges, it adds a bold modern touch to any space. Complete with six hand-woven dining chairs with a metal powder-coated base and a BBQ pit nestled in a travertine top, our smores set is the next level of your outdoor dining experience.\n\nSize of table (inches): 72x48x30\n\nSize of chairs (inches): 20x18x32\n\nMaterial: Travertine, metal, hand woven jute",
       "images": [
         "assets/img/products/outdoor/smores-2-0-01.webp",
         "assets/img/products/outdoor/smores-2-0-02.webp",
@@ -1492,7 +1492,7 @@
     },
     {
       "key": "others",
-      "label": "Others",
+      "label": "Homeware",
       "categories": [
         "accessories",
         "games"
