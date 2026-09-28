@@ -544,9 +544,14 @@ h5, .h5{ font-family:var(--font-sans); font-weight:600; font-size:var(--step1); 
 .project-hero{ position:relative; width:100%; height:100vh; min-height:560px; max-height:1200px; overflow:hidden; background:var(--qk-black); }
 .project-hero img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
 
-.project-meta-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap: 28px clamp(24px,5vw,64px); max-width:640px; }
+.project-overview{ display:flex; flex-wrap:wrap; align-items:baseline; gap:20px clamp(32px,5vw,72px); padding-bottom:32px; border-bottom:1px solid var(--qk-line); }
+.project-overview-label{ font-size:var(--step1); font-weight:600; flex:0 0 auto; margin:0; }
+.project-meta-grid{ display:flex; flex-wrap:wrap; gap:20px clamp(24px,4vw,56px); margin:0; }
 .project-meta-grid dt{ font-size:var(--step-1); letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:var(--ink); margin-bottom:.5em; }
-.project-meta-grid dd{ font-family:var(--font-serif); font-size:var(--step1); color:var(--ink-soft); }
+.project-meta-grid dd{ font-family:var(--font-serif); font-style:italic; font-weight:500; font-size:var(--step1); color:var(--ink-soft); }
+@media (max-width:640px){
+  .project-overview{ flex-direction:column; align-items:flex-start; gap:16px; }
+}
 
 [data-project-gallery]{ display:flex; flex-direction:column; gap:clamp(40px,6vw,96px); }
 .project-gallery-full{ width:100%; }
